@@ -33,5 +33,12 @@
       style = "blue";
     };
 
+    git_branch = {
+      #format = "on [$symbol$branch(:$remote_branch)]($style) "
+      symbol = "";  # default " "
+      format = "$symbol$branch($style)";
+      style = "bright-black";
+    };
+
   };
 }
