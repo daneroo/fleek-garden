@@ -1,7 +1,7 @@
 { pkgs, misc, ... }: {
   # FEEL FREE TO EDIT: This file is NOT managed by fleek. 
   programs.starship.settings = {
-    format = concatStringsSep "" [
+    format = builtins.concatStringsSep "" [
       "$username"
       "$hostname"
       "$kubernetes"
