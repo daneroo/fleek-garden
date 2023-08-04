@@ -45,6 +45,27 @@
         ];
       };
       
+      "daniel@ubunixarm" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.aarch64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
+        modules = [
+          ./home.nix 
+          ./path.nix
+          ./shell.nix
+          ./user.nix
+          ./aliases.nix
+          ./programs.nix
+          # Host Specific configs
+          ./ubunixarm/daniel.nix
+          ./ubunixarm/custom.nix
+          # self-manage fleek
+          ({
+           nixpkgs.overlays = [];
+          })
+
+        ];
+      };
+      
     };
   };
 }
