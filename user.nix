@@ -67,5 +67,11 @@
       # error_symbol = '[\$](red)';
     };
 
+    kubernetes = {
+      disabled = false;
+      #detect_files = ['k8s']
+      #detect_folders = ['k8s']
+      #detect_extensions = ['yaml']
+    };
   };
 }
