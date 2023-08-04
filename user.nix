@@ -51,5 +51,11 @@
       style = "bright-black";
     };
 
+    cmd_duration = {
+      show_milliseconds = true;
+      format = "[$duration]($style) ";
+      style = "yellow";
+    };
+
   };
 }
