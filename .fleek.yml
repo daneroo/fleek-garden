@@ -1,5 +1,8 @@
 aliases:
     fleeks: cd ~/.local/share/fleek
+    # when fleek is not installed?
+    "nfleek-apply": "nix run github:ublue-os/fleek -- apply"
+
 allow_broken: false
 bling: default
 blocklist: []

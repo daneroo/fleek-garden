@@ -20,3 +20,5 @@ $ apply-$(hostname)
 
 Your actual aliases are listed below:
     fleeks = "cd ~/.local/share/fleek";
+
+    nfleek-apply = "nix run github:ublue-os/fleek -- apply";
