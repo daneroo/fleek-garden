@@ -25,5 +25,13 @@
       format = "@[$ssh_symbol$hostname]($style)";
     };
 
+    directory = {
+      truncation_length = 2;
+      truncation_symbol = ".../";
+      truncate_to_repo = false;
+      format = ":[$path]($style)[$read_only]($read_only_style) ";
+      style = "blue";
+    };
+
   };
 }
