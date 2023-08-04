@@ -21,7 +21,6 @@
   home.packages = [
     # user selected packages
     pkgs.helix
-    pkgs.neofetch
     # Fleek Bling
     pkgs.git
     pkgs.htop
