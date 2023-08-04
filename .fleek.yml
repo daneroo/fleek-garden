@@ -28,6 +28,11 @@ systems:
       hostname: ubunix
       os: linux
       username: daniel
+    - arch: aarch64
+      home: ""
+      hostname: ubunixarm
+      os: linux
+      username: daniel
 track: nixos-unstable
 unfree: true
 users:
