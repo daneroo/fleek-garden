@@ -40,5 +40,16 @@
       style = "bright-black";
     };
 
+    git_status = {
+      ahead = ">";  # default "⇡"
+      behind = "<"; # default "⇣"
+    };
+
+    git_state = {
+      # default format
+      # format = '\([$state( $progress_current/$progress_total)]($style)\) '
+      style = "bright-black";
+    };
+
   };
 }
