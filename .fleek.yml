@@ -16,6 +16,7 @@ name: Fleek Configuration
 overlays: {}
 packages:
     - helix
+    - neofetch
 paths:
     - $HOME/bin
     - $HOME/.local/bin
