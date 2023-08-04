@@ -12,5 +12,10 @@
       "$cmd_duration"
       "$character"
     ];
+    username = {
+      format = "[$user]($style)";
+      show_always = true;
+    };
+
   };
 }
