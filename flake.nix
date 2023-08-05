@@ -87,6 +87,27 @@
         ];
       };
       
+      "daniel@nixos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.aarch64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
+        modules = [
+          ./home.nix 
+          ./path.nix
+          ./shell.nix
+          ./user.nix
+          ./aliases.nix
+          ./programs.nix
+          # Host Specific configs
+          ./nixos/daniel.nix
+          ./nixos/custom.nix
+          # self-manage fleek
+          ({
+           nixpkgs.overlays = [];
+          })
+
+        ];
+      };
+      
     };
   };
 }
