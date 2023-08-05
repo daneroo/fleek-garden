@@ -40,6 +40,11 @@ systems:
       hostname: macnix.local
       os: darwin
       username: daniel
+    - arch: aarch64
+      home: ""
+      hostname: nixos
+      os: linux
+      username: daniel
 track: nixos-unstable
 unfree: true
 users:
