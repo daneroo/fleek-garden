@@ -1,8 +1,6 @@
 aliases:
     fleeks: cd ~/.local/share/fleek
-    # when fleek is not installed?
-    "nfleek-apply": "nix run github:ublue-os/fleek -- apply"
-
+    nfleek-apply: nix run github:ublue-os/fleek -- apply
 allow_broken: false
 bling: default
 blocklist: []
@@ -36,6 +34,11 @@ systems:
       home: ""
       hostname: ubunixarm
       os: linux
+      username: daniel
+    - arch: aarch64
+      home: ""
+      hostname: macnix.local
+      os: darwin
       username: daniel
 track: nixos-unstable
 unfree: true
