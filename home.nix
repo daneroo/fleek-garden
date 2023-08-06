@@ -22,6 +22,7 @@
     # user selected packages
     pkgs.helix
     pkgs.neofetch
+    pkgs.jq
     # Fleek Bling
     pkgs.git
     pkgs.htop
