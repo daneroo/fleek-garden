@@ -1,5 +1,7 @@
 aliases:
   fleeks: cd ~/.local/share/fleek
+  # this might not be a great idea, but it avoids installing fleek into /usr/local/bin
+  # but every invocation is now "dynamic" and fleek is called in out .bashrc
   fleek: "nix run github:ublue-os/fleek --"
 allow_broken: false
 bling: default
