@@ -1,8 +1,8 @@
 { pkgs, misc, ... }: {
   # DO NOT EDIT: This file is managed by fleek. Manual changes will be overwritten.
    home.shellAliases = {
-    "fleeks" = "cd ~/.local/share/fleek";
+    "fleek" = "nix run github:ublue-os/fleek --";
     
-    "nfleek-apply" = "nix run github:ublue-os/fleek -- apply";
+    "fleeks" = "cd ~/.local/share/fleek";
     };
 }
