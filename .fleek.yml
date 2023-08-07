@@ -1,6 +1,6 @@
 aliases:
   fleeks: cd ~/.local/share/fleek
-  nfleek-apply: nix run github:ublue-os/fleek -- apply
+  fleek: "nix run github:ublue-os/fleek --"
 allow_broken: false
 bling: default
 blocklist: []
