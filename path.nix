@@ -3,5 +3,7 @@
  home.sessionPath = [ 
     "$HOME/bin"
     "$HOME/.local/bin"
+    "/usr/local/bin"
+    "/opt/homebrew/bin"
  ];
 }
