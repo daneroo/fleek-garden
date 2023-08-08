@@ -1,5 +1,9 @@
 { pkgs, misc, ... }: {
   # FEEL FREE TO EDIT: This file is NOT managed by fleek. 
+  programs.bash.initExtra = ''
+    # My Own ubiversal (all hosts) override of the .bashrc
+  '';
+
   programs.starship.settings = {
     format = builtins.concatStringsSep "" [
       "$username"
