@@ -2,10 +2,15 @@
   # FEEL FREE TO EDIT: This file is NOT managed by fleek. 
   programs.bash.initExtra = ''
     # My Own ubiversal (all hosts) override of the .bashrc
+    #if ! command -v fleek &> /dev/null; then
+    #    alias fleek='nix run github:ublue-os/fleek --'
+    #fi
     if ! command -v fleek &> /dev/null; then
+        echo "fleek command not found. Adding alias for fleek using nix."
         alias fleek='nix run github:ublue-os/fleek --'
+    else
+        echo "fleek command is already available. No alias added."
     fi
-
   '';
 
   programs.starship.settings = {
