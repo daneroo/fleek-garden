@@ -3,7 +3,10 @@
   programs.bash.initExtra = ''
     # (all hosts) override/append of the .bashrc
 
-    # if fleek command not found. Adding alias for fleek using `nix run`
+    # We prefer fleek to be installed with the canonical installer,
+    #  but when that does not work (as in nixos for me currently)
+    #  we have this alias as a fallback
+    # if fleek command not found. Adding alias which uses `nix run`
     if ! command -v fleek &> /dev/null; then
        alias fleek='nix run github:ublue-os/fleek --'
     fi
