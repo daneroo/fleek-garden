@@ -25,7 +25,6 @@ paths:
   - /opt/homebrew/bin # for brew on arm macs
 programs:
   - dircolors
-  - yq
 shell: bash
 systems:
   - arch: x86_64
