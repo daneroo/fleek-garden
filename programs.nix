@@ -9,6 +9,7 @@
     programs.starship.enable = true;
 
   # User specified programs 
-    programs.dircolors.enable = true;
+    programs.dircolors.enable = true; 
+    programs.yq.enable = true;
 
 }
